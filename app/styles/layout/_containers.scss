@@ -46,8 +46,12 @@ ul{
 }
 .spin {
   color: black;
+  position: fixed;
+  top: 38px;
+  left: 268px;
   &:hover{
+    color: red;
     transition: 1.8s;
-    transform: rotate(1440deg);
+    transform: rotate(1440deg) scale(3);
   }
 }
