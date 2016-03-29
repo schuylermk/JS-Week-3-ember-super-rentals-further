@@ -1,3 +1,17 @@
 <h2 id="title">I am application.hbs, I repeat on all the pages</h2>
+<div class="container">
+  <header class = "jumbotron">
+    <h1>Super Rentals</h1>
+  </header>
+</div>
 
-{{outlet}}
+
+<div class="container">
+  {{outlet}}
+</div>
+
+<hr>
+
+<footer>
+  {{#link-to 'contact'}}Our representatives would love to help!{{/link-to}}
+</footer>
