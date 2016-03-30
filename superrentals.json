@@ -23,19 +23,19 @@
     }, {
     "name": "Seattle",
     "country": "USA"
-  }]
+  }],
 
-"announcements": [{
-    "sales": "Mike Teavee's half off",
-    "weather": "Cloudy Cold",
-    "news": "Things are happening"
-  }, {
-    "sales": "Red Cube rental for $100 a night",
-    "weather": "Frosty",
-    "news": "People landing on the moon"
-  }, {
-    "sales": "Violet's must rent now",
-    "weather": "Sunny day",
-    "news": "Flowers be bloomin"
-  }]
+  "announcements": [{
+      "sales": "Mike Teavee's half off",
+      "weather": "Cloudy Cold",
+      "news": "Things are happening"
+    }, {
+      "sales": "Red Cube rental for $100 a night",
+      "weather": "Frosty",
+      "news": "People landing on the moon"
+    }, {
+      "sales": "Violet's must rent now",
+      "weather": "Sunny day",
+      "news": "Flowers be bloomin"
+    }]
 }

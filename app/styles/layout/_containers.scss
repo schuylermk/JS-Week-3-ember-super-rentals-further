@@ -20,7 +20,7 @@ ul{
       &:hover {
         background-color: lighten(blue, 20%);
         transition: .8s;
-        // transform: rotate(12deg) scale(1.2);
+        transform: rotate(12deg) scale(1.2);
         cursor: pointer;
       }
     }
@@ -45,14 +45,11 @@ ul{
   color: black;
   font-size: 1.2em;
 }
-// .spin {
-//   color: black;
-//   position: fixed;
-//   top: 38px;
-//   left: 268px;
-//   &:hover{
-//     color: red;
-//     transition: 1.8s;
-//     transform: rotate(1440deg) scale(3);
-//   }
-// }
+.spin {
+  color: black;
+  &:hover{
+    color: red;
+    transition: 1.8s;
+    transform: rotate(10deg) translateX(100%) scale(3);
+  }
+}
