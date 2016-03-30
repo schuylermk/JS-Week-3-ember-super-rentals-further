@@ -4,7 +4,7 @@ export default Ember.Component.extend({
   addNewCity: false,
   actions: {
     cityFormShow() {
-      this.set('addNewCity', true):
+      this.set('addNewCity', true);
     },
     save4() {
       var params = {
@@ -12,7 +12,7 @@ export default Ember.Component.extend({
         country: this.get('country'),
       };
       this.set('addNewCity', false);
-      this.sendAction('save5', params);
+      this.sendAction('saveRental', params);
     }
   }
 });

@@ -1,5 +1,5 @@
-{{if addNewCity}}
-<h1>New City this is app/temp/comp/new-city</h1>
+{{#if addNewCity}}
+<h1>New City this is app/template/comp/new-city</h1>
 <div class="container">
   <form>
     <div class="form-group">
@@ -15,5 +15,5 @@
 </div>
 
 {{else}}
-<button {{action 'cityFormShow'}}> New City</button>
+  <button {{action 'cityFormShow'}}> New City</button>
 {{/if}}

@@ -25,7 +25,7 @@
     "country": "USA"
   }],
 
-  "announcements": [{
+    "announcements": [{
       "sales": "Mike Teavee's half off",
       "weather": "Cloudy Cold",
       "news": "Things are happening"

@@ -14,7 +14,7 @@ export default Ember.Component.extend({
         news: this.get('news'),
       };
       this.set('addNewAnnouncement', false);
-      this.sendAction('save5', params);
+      this.sendAction('saveRental', params);
     }
   }
 });
