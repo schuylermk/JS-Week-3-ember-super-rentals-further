@@ -22,7 +22,8 @@
     "country": "USA"
     }, {
     "name": "Seattle",
-    "country": "USA"
+    "country": "USA",
+    "rental.city": ""
   }],
 
     "announcements": [{

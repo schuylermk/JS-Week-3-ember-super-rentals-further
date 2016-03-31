@@ -1,14 +1,9 @@
 <div class="announcements-page">
   <h1 class="spin">its getten hot n her!</h1>
-  <h2>it is</h2>
-  <h3>so hot</h3>
-  <h4>im gonna</h4>
-  <h5>practice enunciating so that I can get a better job.</h5>
-
   <h1>But seriously, here are some annoucements and things</h1>
   <ul>
     {{#each model as |announcement|}}
-      {{announcement-tile announcement=announcement destroyAnnouncement="destroyAnnouncement"}}
+      {{announcement-tile announcement=model destroyAnnouncement="destroyAnnouncement"}}
     {{/each}}
   </ul>
 

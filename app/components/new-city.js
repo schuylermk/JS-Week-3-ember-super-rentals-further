@@ -12,7 +12,7 @@ export default Ember.Component.extend({
         country: this.get('country'),
       };
       this.set('addNewCity', false);
-      this.sendAction('saveRental', params);
+      this.sendAction('saveCity', params);
     }
   }
 });

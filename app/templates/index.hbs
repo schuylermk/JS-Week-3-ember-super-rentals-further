@@ -1,23 +1,30 @@
 <h1> Welcome to Super Rentals app/template/index </h1>
 
 We hope you find exactly what you're looking for in a place to stay.
+
+<h2> Available Rentals</h2>
+
 <ul>
   {{#each model.rentals as |rental|}}
     {{rental-tile rental=rental}}
   {{/each}}
 </ul>
-
-{{new-rental saveRental="saveRental"}}
+<ul>
+  {{#each model.announcements as |announcement|}}
+    {{announcement-tile announcement=announcement}}
+  {{/each}}
+</ul>
+<!-- {{new-rental saveRental="saveRental"}} -->
 
 <h2> Cities </h2>
 
 <ul>
   {{#each model.cities as |city|}}
-    <li>{{city.name}},  {{city.country}}</li>
+    <li>{{#link-to 'city' city.id}}{{city.name}}{{/link-to}}</li>
   {{/each}}
 </ul>
 
-{{new-city saveRental="saveRental"}}
+{{new-city saveCity="saveCity"}}
 
 <hr>
 

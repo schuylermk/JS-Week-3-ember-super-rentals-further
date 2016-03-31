@@ -1,8 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model() {
-    return this.store.findAll('announcements');
+  model(params) {
+    return this.store.findRecord('announcements', params.announcements_id);
   },
   actions: {
     saveRental(params) {
