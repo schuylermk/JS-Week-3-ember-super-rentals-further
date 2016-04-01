@@ -7,14 +7,14 @@ export default Ember.Component.extend({
       this.set('addNewAnnouncement', true);
     },
 
-    save4() {
+    saveAnnouncement() {
       var params = {
         sales: this.get('sales'),
         weather: this.get('weather'),
         news: this.get('news'),
       };
       this.set('addNewAnnouncement', false);
-      this.sendAction('saveRental', params);
+      this.sendAction('saveAnnouncement', params);
     }
   }
 });

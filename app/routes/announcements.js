@@ -1,18 +1,18 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model(params) {
-    return this.store.findRecord('announcements', params.announcements_id);
-  },
+  // model(params) {
+  //   return this.store.findRecord('announcements', params);
+  // },
   actions: {
-    saveRental(params) {
+    saveAnnouncement(params) {
       var newAnnouncements = this.store.createRecord('announcements', params);
-      newAnnouncements.save();
+      announcements.save();
       this.transitionTo('announcements');
     },
     destroyAnnouncement(announcement) {
       announcement.destroyRecord();
-      this.transitionTo('announcements');
+      this.transitionTo('index');
     }
   }
 });

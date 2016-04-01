@@ -9,11 +9,7 @@ We hope you find exactly what you're looking for in a place to stay.
     {{rental-tile rental=rental}}
   {{/each}}
 </ul>
-<ul>
-  {{#each model.announcements as |announcement|}}
-    {{announcement-tile announcement=announcement}}
-  {{/each}}
-</ul>
+
 <!-- {{new-rental saveRental="saveRental"}} -->
 
 <h2> Cities </h2>
@@ -27,6 +23,12 @@ We hope you find exactly what you're looking for in a place to stay.
 {{new-city saveCity="saveCity"}}
 
 <hr>
+
+<ul>
+  {{#each model.announcements as |announcement|}}
+    <li>{{announcement-tile announcement=announcement destroyAnnouncement="destroyAnnouncement"}}</li>
+  {{/each}}
+</ul>
 
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
